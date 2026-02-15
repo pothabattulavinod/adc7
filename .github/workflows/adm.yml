@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://rd4.seedr.cc/ff_get/5869504776/www.5MovieRuylz.bargains%20-%20The%20Raja%20Saab%20(2026)%20Telugu%20HQ%20HDRip%20-%20x264%20-%20AAC%20-%20850MB%20-%20ESub.mkv?st=fxY4izEmnOq6-Bhkc4SDpQ&e=1770884692"
-          OUTPUT_FOLDER="rs"
+          INPUT_URL="https://www.seedr.cc/download/archive/b93d19fd55ff9067d9d1b5a834a6da487af4e270ba73bd4f16f9fc4092e9b737?token=fc626bbe542a5b36f34ca3c2d5a15eb370d0228820046a8ef65713ea5b56f447&exp=1771229533"
+          OUTPUT_FOLDER="kgf"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add rs
+          git add kgf
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
