@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.cdngo.site/Couple_Friendly_2026_Telugu_720p.mkv"
-          OUTPUT_FOLDER="cf"
+          INPUT_URL="https://cdn.cdngo.site/Vishnu_Vinyasam_2026_Telugu_720p.mkv"
+          OUTPUT_FOLDER="vv"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add cf
+          git add vv
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
